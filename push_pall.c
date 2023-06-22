@@ -4,7 +4,7 @@ void push(stack_t **stack, int n)
 {
 	stack_t *new_node = malloc(sizeof(stack_t));
 
-	if(new_node == null)
+	if(new_node == NULL)
 	{
 		fprintf(stderr, "Error: Could not allocate memory\n");
 		exit(EXIT_FAILURE);
@@ -16,10 +16,10 @@ void push(stack_t **stack, int n)
 
 	if (*stack != NULL)
 	{
-		*stack->prev = new_node;
+		(*stack)->prev = new_node;
 	}
 
-	*stack = new_node
+	*stack = new_node;
 }
 
 void pall(stack_t **stack)

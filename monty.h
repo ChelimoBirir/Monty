@@ -1,4 +1,4 @@
-//LIBRARIES AND DEFINITIONS
+/*LIBRARIES AND DEFINITIONS*/
 
 #ifndef MONTY_H
 #define MONTY_H
@@ -10,7 +10,7 @@
 #include <string.h>
 #include <ctype.h>
 
-//STRUCTURES AND TYPE DEFINITIONS
+/*STRUCTURES AND TYPE DEFINITIONS*/
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -56,6 +56,8 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-//FUNCTION PROTOTYPES
+/*FUNCTION PROTOTYPES*/
 void push(stack_t **stack, int n);
 void pall(stack_t **stack);
+
+#endif /*MONTY_H*/
